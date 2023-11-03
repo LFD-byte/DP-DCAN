@@ -1,2 +1,2 @@
 # DP-DCAN
-The code will be update soon.
+The code will be updated soon.
