@@ -5,12 +5,51 @@ Single-cell RNA sequencing (scRNA-seq) is important to transcriptomic analysis o
 
 ## install
 
-### python
-`python=3.9.13`
+### create conda environment
+`conda create -n dp-dcan python=3.9.13`
 
-### pip
+### install requirements
+
 ```
-$ pip install -r requirements
+conda activate dp-dcan
+pip install -r requirements
+```
+
+## Project structure
+
+```
++--checkpoints
++--datasets
+|      +--train
+|      |      +--Muraro.zip
++--dp
+|      +--compute_coordinates.py
+|      +--compute_dp_sgd.py
+|      +--compute_rdp.py
+|      +--DPSGD.py
+|      +--dp_optimizer.py
+|      +--get_MaxSigma_or_MaxSteps.py
+|      +--rdp_convert_dp.py
+|      +--sampling.py
+|      +--train_with_dp.py
+|      +--validation.py
++--figures
+|      +--DP-DCAN.pdf
+|      +--DP-DCAN.png
++--latents
++--model_weights
++--wandb
++--predicted_y
++--DCAN.py
++--DCAN_main.py
++--DP_DCAN.py
++--DP_DCAN_main.py
++--layers.py
++--preprocess.py
++--README.md
++--requirements.txt
++--run.sh
++--single_cell_tools.py
 ```
 
 ## Usage
